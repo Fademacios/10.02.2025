@@ -1,5 +1,5 @@
-function writeNameWithParametrs(imie) {
-  consle.log("cześć, " + imie + "! Miło cię widzieć.");
+function powitajUzytkownika(imie) {
+  document.getElementById("powitanie").innerText = "cześć, " + imie + "! Miło cię widzieć.");
 }
 const imieUzytkownika = prompt("podaj swoje imie:");
-writeNameWithParametrs(imieUzytkownika);
+powitajUzytkownika(imieUzytkownika);
