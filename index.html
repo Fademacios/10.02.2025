@@ -8,13 +8,14 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
+<body onload="powitajUzytkownika()">
+    <h1 id="powitanie">Witaj!</h1>
     <script>
-        function writeNameWithParametrs(imie) {
-            consle.log("cześć, " + imie + "! Miło cię widzieć.");
+        function powitajUzytkownika(imie) {
+            document.getElementById("powitanie").innerText = "cześć, " + imie + "! Miło cię widzieć.");
         }
         const imieUzytkownika = prompt("podaj swoje imie:");
-        writeNameWithParametrs(imieUzytkownika);
+        powitajUzytkownika(imieUzytkownika);
     </script>
 </body>
 </html>
